@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-face,
+.second-face,
+.third-face,
+.four-face,
+.five-face,
+.six-face {
+    width: 104px;
+    height: 104px;
+    background-color: #e7e7e7;
+    border-radius: 10%;
+    box-shadow: 0 5px #fff inset, 0 -5px #bbb inset, 5px 0 #d7d7d7 inset, -5px 0 #d7d7d7 inset;
+    padding: 6px;
+    margin: 10px;
+}
+
+.dot {
+    width: 24px;
+    height: 24px;
+    background-color: #333;
+    border-radius: 50%;
+    box-shadow: 0 3px #111 inset, 0 -3px #555 inset;
+    margin: 4px;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-face .dot:nth-child(2) {
+    align-self: flex-end;
+}
+
+.third-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-face .dot:nth-child(2) {
+    align-self: center;
+}
+
+.third-face .dot:nth-child(3) {
+    align-self: flex-end;
+}
+
+
+/* 作业部分 */
+
+
+/* 4：自研代码
+.four-face {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.four-face .column {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+.four-face,
+.six-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.four-face .column,
+.six-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.five-face {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.five-face .column:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+}
+
+.five-face .column {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* .six-face {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.six-face .column {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+} */
