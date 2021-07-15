@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://liangxiansheng688.com.cn/jquery.min.js"></script>
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+    <button id="show">显示</button>
+    <button id="hide">隐藏</button>
+    <button id="fadeIn">淡入</button>
+    <button id="fadeOut">淡出</button>
+
+    <script>
+        $('.box').css('backgroundColor', 'green');
+
+        $('#hide').click(function() {
+            $('.box').hide();
+        })
+
+        $('#show').click(function() {
+            $('.box').show();
+        })
+
+        $('#fadeIn').click(function() {
+            $('.box').fadeIn(1000);
+        })
+
+        $('#fadeOut').click(function() {
+            $('.box').fadeOut(1000);
+        })
+    </script>
+
+
+
+
+
+</body>
+
+</html>
